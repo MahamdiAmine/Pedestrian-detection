@@ -1,0 +1,102 @@
+/* ===================================================================
+ *  12. pricing - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+
+#detectionOnWebCam {
+    background: #ebebeb;
+    padding-top: 80px !important;
+    padding-bottom: 12rem;
+    padding-block-start: 34px !important;
+}
+
+#detectionOnWebCam h1 {
+    margin-bottom: 3.6rem;
+}
+
+#detectionOnWebCam .pricing-content {
+    background-color: black !important;
+    padding-top: 40px;
+}
+
+#detectionOnWebCam h1.intro-header {
+    /*font-family: "montserrat-regular", sans-serif;*/
+    color: #ffffff !important;
+    /*font-style: normal;*/
+    /*text-rendering: optimizeLegibility;*/
+    /*margin-bottom: 2.4rem;*/
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * ------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1024px) {
+    #detectionOnWebCam .pricing-content > [class*="col"] {
+        width: 100% !important;
+        float: none !important;
+        clear: both !important;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #detectionOnWebCam [class*="col"].pricing-intro {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 650px;
+    }
+
+    #detectionOnWebCam [class*="col"].pricing-intro h1::before {
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+
+    #detectionOnWebCam [class*="col"].pricing-table {
+        margin-top: 5.4rem;
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .pricing-table .plan-wrap {
+        width: 100% !important;
+        float: none !important;
+        clear: both !important;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .pricing-table .plan-top-part,
+    .pricing-table .plan-bottom-part {
+        float: left;
+    }
+
+    .pricing-table .plan-top-part {
+        width: 41.66667%;
+        margin-top: 1.2rem;
+    }
+
+    .pricing-table .plan-bottom-part {
+        width: 58.33333%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #detectionOnWebCam [class*="col"].pricing-table {
+        max-width: 360px;
+    }
+
+    #detectionOnWebCam .plan-top-part,
+    #detectionOnWebCam .plan-bottom-part {
+        width: 100% !important;
+        float: none !important;
+        clear: both !important;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

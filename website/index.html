@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<!--[if lt IE 9 ]>
+<html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]>
+<html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Pedestrian detection</title>
+    <meta name="description" content="Pedestrian detection App">
+    <meta name="author" content="Mahamdi Amine">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS  ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/detectionOnVid.css">
+    <link rel="stylesheet" href="css/detectionOnWebCam.css">
+    <link rel="stylesheet" href="css/dropFiles.css">
+
+    <!-- scripts  ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/dropFile.js"></script>
+    <script src="js/render.js"></script>
+
+    <!-- favicons  ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body id="top">
+
+<!-- header
+================================================== -->
+<header id="header" class="row">
+
+    <div class="header-logo">
+        <a href="index.html">Pedestrian detection.</a>
+    </div>
+
+    <nav id="header-nav-wrap">
+        <ul class="header-main-nav">
+            <li class="current"><a class="smoothscroll" href="#home" title="home">Home</a></li>
+            <li><a class="smoothscroll" href="#about" title="about">About</a></li>
+            <li><a class="smoothscroll" href="#trainWithPics" title="train With Pics">train With Pics</a></li>
+            <li><a class="smoothscroll" href="#detectionOnVid" title="Detection on videos">Detection on videos</a></li>
+            </li>
+            <li><a class="smoothscroll" href="#detectionOnWebCam" title="Detection on WebCam">Detection on WebCam</a>
+            </li>
+            <li><a class="smoothscroll" href="#testimonials" title="testimonials">Testimonials</a></li>
+            <li><a class="smoothscroll" href="#download" title="download">Download</a></li>
+        </ul>
+    </nav>
+
+    <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+
+</header> <!-- /header -->
+
+
+<!-- home
+================================================== -->
+<section id="home" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000
+         data-natural-height=2000>
+
+    <div class="overlay"></div>
+    <div class="home-content">
+
+        <div class="row contents">
+            <div class="home-content-left">
+
+                <h3 data-aos="fade-up">Welcome to Our App</h3>
+
+                <h1 data-aos="fade-up">
+                    Pedestrians detection.<br>
+                </h1>
+
+                <div class="buttons" data-aos="fade-up">
+                    <a href="#download" class="smoothscroll button stroke">
+                        <span class="icon-circle-down" aria-hidden="true"></span>
+                        Download App
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="home-image-right">
+                <img src="images/iphone-app-470.png"
+                     srcset="images/iphone-app-470.png 1x, images/iphone-app-940.png 2x"
+                     data-aos="fade-up">
+            </div>
+        </div>
+
+    </div> <!-- end home-content -->
+
+    <ul class="home-social-list">
+        <li><a target="_blank" href="https://www.quora.com/profile/Mahamdi-Amine"><i class="fa fa-quora"></i></a></li>
+        <li><a target="_blank" href="https://t.me/MahamdiAmine"><i class="fa fa-telegram"></i></a></li>
+        <li><a target="_blank" href="https://twitter.com/MahamdiAmine"><i class="fa fa-twitter"></i></a></li>
+        <li><a target="_blank" href="https://stackexchange.com/users/14483283/mahamdi"><i
+                class="fa fa-stack-overflow"></i></a></li>
+        <li><a target="_blank" href="https://github.com/MahamdiAmine"><i class="fa fa-github-square"></i></a></li>
+    </ul>
+    <!-- end home-social-list -->
+
+    <div class="home-scrolldown">
+        <a href="#about" class="scroll-icon smoothscroll">
+            <span>Scroll Down</span>
+            <i class="icon-arrow-right" aria-hidden="true"></i>
+        </a>
+    </div>
+
+</section> <!-- end home -->
+
+
+<!-- about
+================================================== -->
+<section id="about">
+
+    <div class="row about-intro">
+
+        <div class="col-four">
+            <h1 class="intro-header" data-aos="fade-up">About Our App</h1>
+        </div>
+        <div class="col-eight">
+            <p class="lead" data-aos="fade-up">
+                Pedestrians detection is an Open source application that detects Pedestrians in streets
+                ,it detects people in general.the app realized by a group of two developers in Algeria
+                (Higher National School of Computer Science - ESI ex INI, Algers).
+            </p>
+        </div>
+
+    </div>
+
+    <div class="row about-features">
+
+        <div class="features-list block-1-3 block-m-1-2 block-mob-full group">
+
+            <div class="bgrid feature" data-aos="fade-up">
+
+                <span class="icon"><i class="icon-window"></i></span>
+
+                <div class="service-content">
+
+                    <h3>Fully Responsive</h3>
+
+                    <p>The App is fully responsive ,you can use it on images , Live Wam ,Or videos </p>
+
+                </div>
+
+            </div> <!-- /bgrid -->
+
+            <div class="bgrid feature" data-aos="fade-up">
+
+                <span class="icon"><i class="icon-paint-brush"></i></span>
+
+                <div class="service-content">
+                    <h3>Stylish Design</h3>
+
+                    <p> Our app respects the UI /UX rules and best practices.
+                        with consistent communication, user friendly and User-focused design ...
+                    </p>
+
+                </div>
+
+            </div> <!-- /bgrid -->
+
+            <div class="bgrid feature" data-aos="fade-up">
+
+                <span class="icon"><i class="icon-file"></i></span>
+
+                <div class="service-content">
+                    <h3>Clean Code</h3>
+
+                    <p>Our app respect the clean code norms: Naming Conventions,DRY,Tests,Comments,indents
+                        deep understanding of the code ...
+                        it's totally Free of Charge and you can review the code on github.
+                    </p>
+
+                </div>
+
+            </div> <!-- /bgrid -->
+
+            <div class="bgrid feature" data-aos="fade-up">
+
+                <span class="icon"><i class="icon-sliders"></i></span>
+
+                <div class="service-content">
+                    <h3>Easy To Customize</h3>
+
+                    <p>The UI let you customise , and choose your preferences.
+                    </p>
+                </div>
+
+            </div> <!-- /bgrid -->
+
+
+        </div> <!-- end features-list -->
+
+    </div> <!-- end about-features -->
+
+    <div class="row about-how">
+
+        <h1 class="intro-header" data-aos="fade-up">How The App Works?</h1>
+
+        <div class="about-how-content" data-aos="fade-up">
+            <div class="about-how-steps block-1-2 block-tab-full group">
+
+                <div class="bgrid step" data-item="1">
+                    <h3>Collect data</h3>
+                    <p>Collect data from various sources ,the data pictures must be clear .
+                    </p>
+                </div>
+
+                <div class="bgrid step" data-item="2">
+                    <h3>Train the DPNN </h3>
+                    <p>train deep learning-based object detection,it uses the Darknet framework
+                        ,witch is an open source neural network written in C and CUDA.
+                    </p>
+                </div>
+
+                <div class="bgrid step" data-item="3">
+                    <h3>Choose how to use it </h3>
+                    <p>you can detect object either on videos or WebCam live stream.
+                    </p>
+                </div>
+
+                <div class="bgrid step" data-item="4">
+                    <h3>Enjoy</h3>
+                    <p>All the peoples in the video will be detects , the precision depends on your configurations
+                        and of course of the quality of you dataset.
+                    </p>
+                </div>
+
+            </div>
+        </div> <!-- end about-how-content -->
+
+    </div> <!-- end about-how -->
+
+</section> <!-- end about -->
+
+
+<!-- trainWithPics
+================================================== -->
+<section id="trainWithPics">
+    <div class="row pricing-content">
+
+        <div class="col-four pricing-intro">
+            <h1 class="intro-header" data-aos="fade-up">Our Pricing Options</h1>
+
+            <p data-aos="fade-up">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                doloremque laudantium.
+            </p>
+        </div>
+
+        <div class="col-eight pricing-table">
+            <div class="row">
+
+                <div class="col-six plan-wrap">
+                    <div class="plan-block" data-aos="fade-up">
+
+                        <div class="plan-top-part">
+                            <h3 class="plan-block-title">Lite Plan</h3>
+                            <p class="plan-block-price"><sup>$</sup>25</p>
+                            <p class="plan-block-per">Per Month</p>
+                        </div>
+
+                        <div class="plan-bottom-part">
+                            <ul class="plan-block-features">
+                                <li><span>3GB</span> Storage</li>
+                                <li><span>10GB</span> Bandwidth</li>
+                                <li><span>5</span> Databases</li>
+                                <li><span>30</span> Email Accounts</li>
+                            </ul>
+
+                            <a class="button button-primary large" href="">Get Started</a>
+                        </div>
+
+                    </div>
+                </div> <!-- end plan-wrap -->
+
+                <div class="col-six plan-wrap">
+                    <div class="plan-block primary" data-aos="fade-up">
+
+                        <div class="plan-top-part">
+                            <h3 class="plan-block-title">Pro Plan</h3>
+                            <p class="plan-block-price"><sup>$</sup>50</p>
+                            <p class="plan-block-per">Per Month</p>
+                        </div>
+
+                        <div class="plan-bottom-part">
+                            <ul class="plan-block-features">
+                                <li><span>5GB</span> Storage</li>
+                                <li><span>20GB</span> Bandwidth</li>
+                                <li><span>15</span> Databases</li>
+                                <li><span>70</span> Email Accounts</li>
+                            </ul>
+
+                            <a class="button button-primary large" href="">Get Started</a>
+                        </div>
+
+                    </div>
+                </div> <!-- end plan-wrap -->
+
+            </div>
+        </div> <!-- end pricing-table -->
+
+    </div> <!-- end pricing-content -->
+</section> <!-- end trainWithPics -->
+
+<!-- detectionOnVid
+================================================== -->
+<section id="detectionOnVid">
+    <div class="row pricing-content">
+
+        <div class="col-four pricing-intro">
+            <h1 class="intro-header" data-aos="fade-up">Detection On Video :</h1>
+
+            <p data-aos="fade-up">Please choose a video witch contains pedestrians ,then the application will try to
+                detect all of them .
+            </p>
+        </div>
+
+        <div class="col-eight pricing-table">
+            <div class="row">
+
+                <div class="col-six plan-wrap">
+                    <div class="plan-block" data-aos="fade-up">
+                        <div class="file-upload">
+                            <button class="file-upload-btn" type="button"
+                                    onclick="$('.file-upload-input').trigger( 'click' )">Add Image
+                            </button>
+
+                            <div class="image-upload-wrap">
+                                <input class="file-upload-input" type='file' onchange="readURL(this);"
+                                       accept="image/*"/>
+                                <div class="drag-text">
+                                    <h3>Drag and drop a file or select add Image</h3>
+                                </div>
+                            </div>
+                            <div class="file-upload-content">
+                                <img class="file-upload-image" src="#" alt="your image"/>
+                                <div class="image-title-wrap">
+                                    <button type="button" onclick="removeUpload()" class="remove-image">Remove <span
+                                            class="image-title">Uploaded Image</span></button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div> <!-- end plan-wrap -->
+
+
+                <div class="col-six plan-wrap">
+                    <div class="plan-block" data-aos="fade-up">
+                        <div class="plan-top-part">
+                            <h3 class="plan-block-title">Detect pedestrians on video</h3>
+                        </div>
+                        <a class="button button-primary large" href="">Go</a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end plan-wrap -->
+    </div> <!-- end pricing-table -->
+    </div> <!-- end pricing-content -->
+</section> <!-- end detectionOnVid -->
+<!-- detectionOnWebCam
+================================================== -->
+<section id="detectionOnWebCam">
+    <div class="row pricing-content">
+        <div class="col-four pricing-intro">
+            <h1 class="intro-header" data-aos="fade-up">Detection On WebCam</h1>
+
+            <p data-aos="fade-up">We will use your web Cam to detect peoples around you, press Get Started !
+            </p>
+        </div>
+        <div class="col-eight pricing-table" id="detectionOnWebCamTable">
+            <div class="row">
+
+                <div class="col-six plan-wrap">
+                    <div class="plan-block primary" id="detectionOnWebCamH1" data-aos="fade-up">
+
+                        <div class="plan-top-part">
+                            <h3 class="plan-block-title">Detect Peoples on your Web Cam</h3>
+                        </div>
+
+                        <div class="plan-bottom-part">
+                            <ul class="plan-block-features">
+                                <li><span>Privacy granted</span>✓</li>
+                                <li><span>HD</span> Web Cam</li>
+                                <li><span>120 </span> FPS</li>
+                                <li><span>Drivers Status : </span> Installed</li>
+                            </ul>
+                            <a class="button button-primary large" onclick="webCam()">Get Started</a>
+                        </div>
+                    </div>
+                </div> <!-- end plan-wrap -->
+
+            </div>
+        </div> <!-- end pricing-table -->
+
+    </div> <!-- end pricing-content -->
+</section> <!-- end detectionOnWebCam -->
+
+
+<!-- Testimonials Section
+================================================== -->
+<!--<section id="testimonials">-->
+
+<!--    <div class="row">-->
+<!--        <div class="col-twelve">-->
+<!--            <h1 class="intro-header" data-aos="fade-up">What They Say About Our App.</h1>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <div class="row owl-wrap">-->
+
+<!--        <div id="testimonial-slider" data-aos="fade-up">-->
+
+<!--            <div class="slides owl-carousel">-->
+
+<!--                <div>-->
+<!--                    <p>-->
+<!--                        Your work is going to fill a large part of your life, and the only way to be truly satisfied is-->
+<!--                        to do what you believe is great work. And the only way to do great work is to love what you do.-->
+<!--                        If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart,-->
+<!--                        you'll know when you find it.-->
+<!--                    </p>-->
+
+<!--                    <div class="testimonial-author">-->
+<!--                        <img src="images/avatars/user-02.jpg" alt="Author image">-->
+<!--                        <div class="author-info">-->
+<!--                            Steve Jobs-->
+<!--                            <span class="position">CEO, Apple.</span>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div>-->
+<!--                    <p>-->
+<!--                        This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.-->
+<!--                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem-->
+<!--                        nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.-->
+<!--                    </p>-->
+
+<!--                    <div class="testimonial-author">-->
+<!--                        <img src="images/avatars/user-03.jpg" alt="Author image">-->
+<!--                        <div class="author-info">-->
+<!--                            John Doe-->
+<!--                            <span>CEO, ABC Corp.</span>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--            </div> &lt;!&ndash; end slides &ndash;&gt;-->
+
+<!--        </div> &lt;!&ndash; end testimonial-slider &ndash;&gt;-->
+
+<!--    </div> &lt;!&ndash; end flex-container &ndash;&gt;-->
+
+<!--</section> &lt;!&ndash; end testimonials &ndash;&gt;-->
+
+
+<!-- download
+================================================== -->
+<section id="download">
+
+    <div class="row">
+        <div class="col-full">
+            <h1 class="intro-header" data-aos="fade-up">Download Our App Today!</h1>
+
+            <p class="lead" data-aos="fade-up">
+                The App is totally free, We Opensource it so it's available for you ,
+                it Works on Windows ,Linux and MacOS.
+                We hope you will enjoy using it.
+            </p>
+
+            <ul class="download-badges">
+                <li><a href="#" title="" class="badge-appstore" data-aos="fade-up">App Store</a></li>
+                <!--                <li><a href="#" title="" class="badge-googleplay" data-aos="fade-up">Play Store</a></li>-->
+            </ul>
+
+        </div>
+    </div>
+
+</section> <!-- end download -->
+
+
+<!-- footer
+================================================== -->
+<footer>
+
+    <div class="footer-main">
+        <div class="row">
+
+            <div class="col-three md-1-3 tab-full footer-info">
+
+                <div class="footer-logo"></div>
+
+                <p>
+                    Pedestrian detection , the Best Open source solution that you can find !
+                </p>
+
+                <ul class="footer-social-list">
+                    <li>
+                        <a target="_blank" href="https://github.com/MahamdiAmine"><i class="fa fa-github"></i></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/MahamdiAmine"><i class="fa fa-twitter"></i></a>
+                    </li>
+                </ul>
+
+
+            </div> <!-- end footer-info -->
+
+            <div class="col-three md-1-3 tab-1-2 mob-full footer-contact">
+
+                <h4>Contact</h4>
+
+                <p>
+                    fm_mahamdi@esi.dz <br>
+                    Twitter: @MahamdiAmine <br>
+                </p>
+
+            </div> <!-- end footer-contact -->
+
+            <div class="col-two md-1-3 tab-1-2 mob-full footer-site-links">
+                <h4>Site Links</h4>
+                <ul class="list-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a target="_blank" href="https://mahamdiamine.github.io/">About Us</a></li>
+                    <li><a target="_blank" href="https://www.mit.edu/privacy/">Privacy Policy</a></li>
+                </ul>
+            </div> <!-- end footer-site-links -->
+        </div> <!-- /row -->
+    </div> <!-- end footer-main -->
+
+    <div class="footer-bottom">
+
+        <div class="row">
+
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>© Copyright Frlm 2020.</span>
+                    <span>Design by <a target="_blank" href="https://mahamdiamine.github.io/">Mahamdi Amine</a></span>
+                </div>
+
+                <div id="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up"></i></a>
+                </div>
+            </div>
+
+        </div> <!-- end footer-bottom -->
+
+    </div>
+
+</footer>
+
+<div id="preloader">
+    <div id="loader"></div>
+</div>
+
+<!-- Java Script
+================================================== -->
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

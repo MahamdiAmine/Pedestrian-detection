@@ -1,0 +1,7 @@
+.code/
+.vscode/
+.idea/
+yolov3-coco/
+yolo_utils.py
+__pycache__/
+web/
