@@ -2,6 +2,7 @@
 .vscode/
 .idea/
 yolov3-coco/
+main.py
 yolo_utils.py
 __pycache__/
 web/
