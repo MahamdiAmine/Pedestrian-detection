@@ -1,0 +1,46 @@
+#configsID {
+    position: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.cnf {
+    font-size: small !important;
+    max-height: 5px !important;
+    position: center !important;
+    margin-left: 38px !important;
+    padding: 1.5rem 1.5rem !important;
+    margin-bottom: 0 !important;
+}
+
+#h3conf {
+    margin-bottom: 3px;
+    color: #d23434;
+}
+
+#h3conf :hover {
+    font-size: large;
+}
+
+#cnfBtn {
+    margin-bottom: 8px !important;
+    background-color: #39b54a;
+    border-color: #39b54a;
+    color: #FFFFFF;
+}
+
+#cnfBtn:hover {
+    background-color: #0087cc;
+}
+
+#row111 {
+    background: #d2c479 !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+#configs {
+    /*background: #ebebeb;*/
+    padding-top: 15rem;
+    padding-bottom: 12rem;
+}

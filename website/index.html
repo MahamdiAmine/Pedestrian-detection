@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/detectionOnVid.css">
     <link rel="stylesheet" href="css/detectionOnWebCam.css">
     <link rel="stylesheet" href="css/dropFiles.css">
+    <link rel="stylesheet" href="css/configs.css">
 
     <!-- scripts  ================================================== -->
     <script src="js/modernizr.js"></script>
@@ -50,12 +51,11 @@
         <ul class="header-main-nav">
             <li class="current"><a class="smoothscroll" href="#home" title="home">Home</a></li>
             <li><a class="smoothscroll" href="#about" title="about">About</a></li>
-            <li><a class="smoothscroll" href="#trainWithPics" title="train With Pics">train With Pics</a></li>
+            <li><a class="smoothscroll" href="#configs" title="Configs && Documentation">Configurations</a></li>
             <li><a class="smoothscroll" href="#detectionOnVid" title="Detection on videos">Detection on videos</a></li>
             </li>
             <li><a class="smoothscroll" href="#detectionOnWebCam" title="Detection on WebCam">Detection on WebCam</a>
             </li>
-            <li><a class="smoothscroll" href="#testimonials" title="testimonials">Testimonials</a></li>
             <li><a class="smoothscroll" href="#download" title="download">Download</a></li>
         </ul>
     </nav>
@@ -247,77 +247,94 @@
 </section> <!-- end about -->
 
 
-<!-- trainWithPics
+<!-- configs
 ================================================== -->
-<section id="trainWithPics">
+<section id="configs">
     <div class="row pricing-content">
 
         <div class="col-four pricing-intro">
-            <h1 class="intro-header" data-aos="fade-up">Our Pricing Options</h1>
+            <h1 class="intro-header" data-aos="fade-up">App configurations</h1>
 
-            <p data-aos="fade-up">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                doloremque laudantium.
+            <p data-aos="fade-up">Please set the configurations for the application,if
+                you do not understand any of those parameters read the documentation .
             </p>
         </div>
 
         <div class="col-eight pricing-table">
             <div class="row">
-
-                <div class="col-six plan-wrap">
-                    <div class="plan-block" data-aos="fade-up">
-
+                <div id="row11" class="col-six plan-wrap">
+                    <div id="row111" class="plan-block" data-aos="fade-up">
                         <div class="plan-top-part">
-                            <h3 class="plan-block-title">Lite Plan</h3>
-                            <p class="plan-block-price"><sup>$</sup>25</p>
-                            <p class="plan-block-per">Per Month</p>
+                            <h3 id="h3conf" class="plan-block-title">Configurations</h3>
                         </div>
-
-                        <div class="plan-bottom-part">
-                            <ul class="plan-block-features">
-                                <li><span>3GB</span> Storage</li>
-                                <li><span>10GB</span> Bandwidth</li>
-                                <li><span>5</span> Databases</li>
-                                <li><span>30</span> Email Accounts</li>
-                            </ul>
-
-                            <a class="button button-primary large" href="">Get Started</a>
+                        <!--                        <div class="plan-bottom-part">-->
+                        <!--configs-->
+                        <div id="configsID">
+                            <!--weights path-->
+                            <div>
+                                <label for="weightsPath">please enter the weights path</label>
+                                <div class="input-field">
+                                    <input class="cnf" id="weightsPath" type="text"
+                                           value="./yolov3-coco/yolov3.weights"/>
+                                </div>
+                            </div>
+                            <!--output path-->
+                            <div>
+                                <label for="outputPath">the output path for videos</label>
+                                <div class="input-field">
+                                    <input class="cnf" id="outputPath" type="text" value="./output/processedVideo.mp4"/>
+                                </div>
+                            </div>
+                            <!--confidence-->
+                            <div>
+                                <label for="confidence">Enter the confidence value</label>
+                                <div class="input-field">
+                                    <input class="cnf" id="confidence" type="text" value="0.5"/>
+                                </div>
+                            </div>
+                            <!--threshold-->
+                            <div>
+                                <label for="threshold"> Enter the threshold value</label>
+                                <div class="input-field">
+                                    <input class="cnf" id="threshold" type="text" value="0.3"/>
+                                </div>
+                            </div>
+                            <!--show time-->
+                            <div style=" margin: 0 auto;
+                                    display: flex;justify-content: center;">
+                                <label for="showTime">Show the time ?</label>
+                                <div class="input-field">
+                                    <input class="cnf" id="showTime" type="checkbox"/>
+                                </div>
+                            </div>
                         </div>
-
+                        <!--                        <div id="cnfBtn" class="plan-bottom-part">-->
+                        <div>
+                            <a id="cnfBtn" class="button button-primary medium" onclick="configs()">Save Configs</a>
+                        </div>
                     </div>
                 </div> <!-- end plan-wrap -->
 
                 <div class="col-six plan-wrap">
-                    <div class="plan-block primary" data-aos="fade-up">
+                    <div id="row12" class="plan-block primary" data-aos="fade-up">
 
                         <div class="plan-top-part">
-                            <h3 class="plan-block-title">Pro Plan</h3>
-                            <p class="plan-block-price"><sup>$</sup>50</p>
-                            <p class="plan-block-per">Per Month</p>
+                            <h3 class="plan-block-title">View the documentation</h3>
                         </div>
 
                         <div class="plan-bottom-part">
-                            <ul class="plan-block-features">
-                                <li><span>5GB</span> Storage</li>
-                                <li><span>20GB</span> Bandwidth</li>
-                                <li><span>15</span> Databases</li>
-                                <li><span>70</span> Email Accounts</li>
-                            </ul>
-
-                            <a class="button button-primary large" href="">Get Started</a>
+                            <a class="button button-primary large" href="">View the documentation</a>
                         </div>
 
                     </div>
                 </div> <!-- end plan-wrap -->
-
             </div>
         </div> <!-- end pricing-table -->
 
     </div> <!-- end pricing-content -->
 </section> <!-- end trainWithPics -->
 
-<!-- detectionOnVid
+<!-- configs
 ================================================== -->
 <section id="detectionOnVid">
     <div class="row pricing-content">
