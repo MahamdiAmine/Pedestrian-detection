@@ -1,8 +1,6 @@
 .code/
 .vscode/
 .idea/
-yolov3-coco/
-main.py
-yolo_utils.py
+yolov3-coco/yolov3.weights
 __pycache__/
 web/

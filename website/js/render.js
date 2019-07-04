@@ -10,7 +10,6 @@ function configs() {
     let checkBox = document.getElementById("showTime");
     let showTime = checkBox.checked;
     eel.update_params(weightsPath, outputPath, confidence, threshold, showTime);
-
 }
 
 let videoPath = '';
@@ -25,11 +24,6 @@ function video() {
         }
     }
 }
-
-function done() {
-    alert("     [✔] Done.");
-}
-
 
 function readURL(input) {
     if (input.files && input.files[0]) {
