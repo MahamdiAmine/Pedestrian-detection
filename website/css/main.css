@@ -1146,7 +1146,7 @@ h1.intro-header::before {
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  transform: translateY(-71%);
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
   z-index: 501;
@@ -1160,8 +1160,8 @@ h1.intro-header::before {
   border: none;
   width: 100px;
   height: 50px;
-  background: url("../images/logo2.png") no-repeat center;
-  background-size: 97px 22px;
+  background: url("../images/logo.png") no-repeat center;
+  background-size: 90px 141px;
   font: 0/0 a;
   text-shadow: none;
   color: transparent;
@@ -2611,14 +2611,14 @@ footer ul a:visited {
 
 .footer-logo {
   display: block;
-  margin: 0 0 5.4rem 0;
+  margin: 0 0 4.4rem 0;
   padding: 0;
   outline: 0;
   border: none;
-  width: 93px;
-  height: 21px;
+  width: 100px;
+  height: 30px;
   background: url("../images/logo.png") no-repeat center;
-  background-size: 93px 21px;
+  background-size: 90px 94px;
   font: 0/0 a;
   text-shadow: none;
   color: transparent;

@@ -3,8 +3,8 @@ import cv2 as cv
 import time
 
 
-def show_image(img):
-    cv.imshow("Image", img)
+def show_image(title,img):
+    cv.imshow(title, img)
     cv.waitKey(0)
 
 

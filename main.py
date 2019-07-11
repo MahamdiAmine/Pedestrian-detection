@@ -67,7 +67,6 @@ def test(videoPath):
 
             writer.write(frame)
             cv.imshow('Video', frame)
-
             if cv.waitKey(1) & 0xFF == ord('q'):
                 break
         writer.release()
