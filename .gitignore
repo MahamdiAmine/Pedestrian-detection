@@ -4,3 +4,4 @@
 yolov3-coco/yolov3.weights
 __pycache__/
 web/
+output.*

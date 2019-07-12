@@ -2,7 +2,7 @@ import eel
 import argparse
 import cv2 as cv
 import numpy as np
-from yolo_utils import infer_image, show_image
+from yolo_utils import infer_image
 
 eel.init('website')
 
@@ -160,4 +160,9 @@ def pass_args():
     return parser.parse_known_args()
 
 
-eel.start('index.html')
+options = {
+	'mode': 'chrome',
+	'port': 1235
+}
+
+eel.start('index.html',port=7478)
